@@ -155,6 +155,7 @@ const Home = () => {
     
     $(document).on("click", ".menu", function(){
       $(".linkcol.overlay").toggleClass("active")
+      $(".navshowul").toggleClass("actived")
     }) 
     // TweenMax.staggerFrom(".social-media ul li", 2, {
     //   delay: 5.7,

@@ -119,14 +119,18 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  opacity: 0;
+}
+.navshowul.actived {
+  opacity: 1;
 }
 
 .navshowul li {
   display: inline-block;
   color: #fff;
   cursor: pointer;
-
 }
+
 
 .navshowul li:not(:last-child) {
   margin-right: 50px;
@@ -238,7 +242,7 @@
   transform: translate(-50%, -50%);
   width: 48vw;
   height: 46vh;
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/merrymen2.gif) no-repeat 50% 50%;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/merry1.gif) no-repeat 50% 50%;
   background-size: cover;
   animation: animateGIF 4s cubic-bezier(0, .58, 1, .58);
   /* animation-delay: 2s; */
