@@ -655,6 +655,7 @@
   text-align: center;
   color: #e316b7;
   margin-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 .scripttopsectionlists {
@@ -681,13 +682,14 @@
 /* .scripttopsectionlisttitle {
   padding: .5rem 1rem;
 } */
+
 .scripttopsectionlist .searchbtn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 .scriptbottomsection {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   padding-bottom: 7rem;
   /* padding: 3rem; */
 }

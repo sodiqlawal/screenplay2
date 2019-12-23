@@ -510,7 +510,7 @@ const Home = () => {
                         onClick={() => setOpenSearch(!openSearch)}
                         className="bg-secondary mt-2 mr-1 initial"
                       />
-                      <div className="input-group">
+                      <div className="input-group scriptsearchbtn">
                         <input
                           type="text"
                           className="form-control"
