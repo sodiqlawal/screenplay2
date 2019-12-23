@@ -713,7 +713,7 @@ const Home = () => {
             </div>
             {/* end first script */}
             {/* start first script */}
-            <div className="botharticle">
+            <div className="botharticle front">
               <ScrollAnimation
                 animateIn="pulse"
                 durationAppear={1000}
