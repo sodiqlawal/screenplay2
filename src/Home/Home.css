@@ -1,4 +1,422 @@
 
+/* start animatednav */
+.navbody {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/muna.gif) no-repeat 50% 50%;
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+}
+
+.gif-overlay {
+  margin: 0%;
+  padding:0%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(14,14,14,0.8);
+  z-index: -1;
+}
+
+.nav {
+  /* position: fixed; */
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: rgba(0,0,0,0.5);
+}
+
+.artist {
+  z-index: 2;
+  position: fixed;
+  line-height: 80px;
+  margin: 0 40px;
+  color: #fff;
+}
+
+.watch {
+  z-index: 2;
+  position: fixed;
+  line-height: 80px;
+  right: 140px;
+  color: grey;
+  padding: 0 10px;
+  font-family: "Helvetica";
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+
+.watch .watchicon {
+  z-index: 2;
+  position: relative;
+  top: 1px;
+  padding-right: 6px;
+}
+
+.menuwrapper {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0);}
+  10% { transform: translate(-5%, -10%);}
+  20% { transform: translate(-15%, 5%);}
+  30% { transform: translate(7%, -25%);}
+  40% { transform: translate(-5%, 25%);}
+  50% { transform: translate(-15%, 10%);}
+  60% { transform: translate(15%, 0%);}
+  70% { transform: translate(0%, 15%);}
+  80% { transform: translate(3%, 35%);}
+  90% { transform: translate(-10%, 10%);}
+}
+
+.menu {
+  z-index: 2;
+  position: fixed;
+  line-height: 80px;
+  right: 0;
+  margin: 0 40px;
+  font-size: 20px;
+  color: #fff;
+  padding-top: 4px;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+.linkrow, .linkcol {
+  margin: 0 !important;
+  padding: 0 !important;
+} 
+.linkcol {
+  height: 100vh;
+}
+
+.linkcol.overlay {
+  /* background: #000; */
+  /* position: absolute; */
+  top: -100%;
+  /* z-index: 1000; */
+}
+
+.linkcol.overlay.active {
+  z-index: 1000;
+  top: 10%;
+  position: absolute;
+  background: #000;
+}
+
+.navshowul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navshowul li {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.navshowul li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navshowul li:first-child:hover::before {
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/aladdin.jpg)center/cover no-repeat;
+  transition: 1s;
+  animation: fade-in 2s ease-in-out;
+}
+
+.navshowul li:nth-child(2):hover::before {
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/johnwick.jpg)center/cover no-repeat;
+  transition: 1s;
+  animation: fade-in 2s ease-in-out;
+}
+
+.navshowul li:nth-child(3):hover::before {
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/lastman.jpg)center/cover no-repeat;
+  transition: 1s;
+  animation: fade-in 2s ease-in-out;
+}
+
+.navshowul li:nth-child(4):hover::before {
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/twilight.jpg)center/cover no-repeat;
+  transition: 1s;
+  animation: fade-in 2s ease-in-out;
+}
+
+.navshowul li:nth-child(5):hover::before {
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/xmen.jpg)center/cover no-repeat;
+  transition: 1s;
+  animation: fade-in 2s ease-in-out;
+}
+
+.navshowul li:last-child:hover::before {
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/narcos.jpg)center/cover no-repeat;
+  transition: 1s;
+  animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    top: -160px;
+  }
+  50% {
+    opacity: 1;
+    top: -180px;
+  }
+  100% {
+    opacity: 1;
+    top: -180px;
+  }
+} 
+
+.hero-gif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48vw;
+  height: 46vh;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/merrymen2.gif) no-repeat 50% 50%;
+  background-size: cover;
+  animation: animateGIF 4s cubic-bezier(0, .58, 1, .58);
+  /* animation-delay: 2s; */
+}
+
+@keyframes animateGIF {
+  0% {
+    width: 100%;
+    height: 100vh;
+  }
+
+  40% {
+    width: 100%;
+    height: 100vh;
+  }
+
+  100% {
+    width: 48vw;
+    height: 46vh;
+  }
+}
+
+.hero-title {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+.hero-title h1 {
+  color: red;
+  font-size: 80px;
+  margin-bottom: 0%;
+}
+
+.glitch {
+  position: relative;
+}
+
+.glitch::before,.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  left: 4px;
+  text-shadow: -30px 0 rgba(0, 174, 255);
+  background: #000;
+}
+
+.glitch::after {
+  left: -2px;
+  text-shadow: -3px 0 blue;
+  background: rgb(146, 145, 145);
+  animation: noise-anim 2s infinite alternate-reverse
+}
+
+.glitch::before {
+  clip: rect(54px, 250px, 56px, 40px);
+  animation: noise-anim 2s infinite alternate-reverse
+}
+
+@keyframes noise-anim {
+  0% {
+    clip-path: inset(40% 0 61% 0);
+  }
+  20% {
+    clip-path: inset(92% 0 1% 0);   
+  }
+  40% {
+    clip-path: inset(43% 0 1% 0);   
+  }
+  60% {
+    clip-path: inset(25% 0 58% 0);   
+  }
+  80% {
+    clip-path: inset(54% 0 7% 0);   
+  }
+  100% {
+    clip-path: inset(58% 0 43% 0);   
+  }
+}
+
+.hero-title p {
+  color: white;
+  font-size: 15px;
+  font-family: 'Helvetica';
+  letter-spacing: 14px;
+  font-weight: 700;
+}
+
+.social-media {
+  position: absolute;
+  bottom: .5%;
+  transform: translateY(-50%);
+}
+
+.social-media ul li {
+  display: inline-block;
+  padding: 0 10px;
+  list-style: none;
+  color: grey;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.listensong {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  transform: translateY(-50%);
+}
+
+.listensong ul li {
+  display: inline-block;
+  color: #fff;
+  list-style: none;
+  padding: 0 10px;
+}
+
+#rotated {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.rotatethis {
+  position: absolute;
+  top: 54%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  animation: rotating 20s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@media screen and (max-width:900px){
+  .watch, .rotatethis, .hero-title p, .hero-gif {
+    display: none;
+  }
+
+  .hero-title {
+    top: 45%;
+    left: 50%;
+  }
+
+  .hero-title h1 {
+    font-size: 32px;
+  }
+
+  .navshowul li {
+    text-align: center;
+    display: block !important;
+    margin: 0% !important;
+    padding: 20px 0;
+  }
+
+  .navshowul li:hover::before{
+    width: 0% !important;
+  }
+}
+/* end animatednav */
+
+
 /* start header */
 .header {
   padding: .5rem 2.5rem 4.5rem 1rem;
@@ -46,7 +464,7 @@
 .headerrightlist:hover .submenu1 {
   display: block;
   position: absolute;
-  background: rgb(32, 21, 32);
+  background: #d50707;
   color: white;
   margin-top: 7px;
   margin-left: -16px;
@@ -134,20 +552,41 @@
 }
 /* end banner */
 
+/* start header */
+.video {
+  /* width: 100%; */
+  height: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+/* end header */
+
 /* start registration */
 .registercontainer {
+  background: #d50707;
+  margin: 0 3rem;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   /* padding: 1rem; */
   text-align: center;
 }
 
 .register{
   padding: 1rem;
-  background: rgb(32, 21, 32);
   color: white;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  transition: all 1s linear;
   /* display: flex;
   flex-direction: column; */
   /* height: 200px; */
+}
+
+.register:hover {
+  background: rgba(0,0,0,0.7);
+  padding: 1.5rem;
 }
 
 .register h5 {
@@ -298,7 +737,7 @@
 
 /* start recognition */
 .recognition {
-  background: rgb(32, 21, 32);
+  background: #d50707;
   color: white;
   padding: 1rem 3rem;
   align-items: center;
@@ -330,7 +769,7 @@
 }
 
 .testimonialsectionright {
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/marvel.jpg)center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/merry.jpg)center/cover no-repeat;
   color: white;
   height: 500px;
   display: grid;
@@ -392,7 +831,7 @@
 
 /* start footer */
 .footercontainer {
-  background: rgb(32, 21, 32);
+  background: #d50707;
   color: white;
   padding: 1rem;
 }
@@ -451,6 +890,10 @@
 /* end footer */
 
 @media screen and (min-width:576px) {
+
+  .navshowul li:not(:last-child) {
+    margin-right: 80px !important;
+  }
 
   /* .navicon {
     display: block !important;
@@ -528,7 +971,7 @@
   }
 
   .footercontainer {
-    background: rgb(32, 21, 32);
+    background: #d50707;
     color: white;
     padding: 1rem;
   }
@@ -792,7 +1235,7 @@
 }
 
 .footercontainer {
-  background: rgb(32, 21, 32);
+  background: #d50707;
   color: white;
   padding: 1rem;
 }
