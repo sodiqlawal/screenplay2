@@ -510,7 +510,7 @@ const Home = () => {
                       <FontAwesomeIcon
                         icon={faSearch}
                         onClick={() => setOpenSearch(!openSearch)}
-                        className="bg-secondary mt-2 mr-1 initial"
+                        className="bg-secondary mt-2 mr-1 initial two"
                       />
                       <div className="input-group scriptsearchbtn">
                         <input
@@ -528,7 +528,7 @@ const Home = () => {
               </ul>
             </ScrollAnimation>
           </section>
-          <section className="scriptbottomsection">
+          <section className="scriptbottomsection mt-0">
             {/* start first script */}
             <div className="botharticle">
               <ScrollAnimation
@@ -536,7 +536,7 @@ const Home = () => {
                 durationAppear={1000}
                 component="div"
               >
-                <article className="scriptbottomsectionarticle mt-4 grow front">
+                <article className="scriptbottomsectionarticle grow front">
                   <div className="scriptbottomsectionarticlenote">
                     <h5 className="scriptbottomsectionarticletitle text-primary">
                       Dead or Alive
