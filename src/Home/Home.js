@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import $ from 'jquery';
 import "./Home.css";
+import "./scss/NewHome.css"
 import CircleType from "circletype";
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import ScrollAnimation from "react-animate-on-scroll";
@@ -12,7 +13,6 @@ import narcos from '../images/narcos.jpg'
 import twilight from '../images/twilight.jpg'
 import iroko from '../images/iroko.png'
 import ibaka from '../images/ibaka.png'
-import about from '../images/about.jpg'
 import InnerSlider from "./InnerSlider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
