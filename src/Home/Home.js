@@ -157,6 +157,8 @@ const Home = () => {
       $(".linkcol.overlay").toggleClass("active")
       $(".navshowul").toggleClass("actived")
     }) 
+
+
     // TweenMax.staggerFrom(".social-media ul li", 2, {
     //   delay: 5.7,
     //   opacity: 0,
@@ -233,7 +235,7 @@ const Home = () => {
                 </div>
                 <div className="hero-gif"></div>
                 <div className="hero-title">
-                  <h1 className="glitch" data-text="Underrated">
+                  <h1 className="glitch" data-text="Screenplay">
                     Screenplay
                   </h1>
                   <p>An online catalogue<br/> for worldclass scripts</p>
