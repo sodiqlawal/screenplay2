@@ -208,8 +208,8 @@ const Home = () => {
                 <div className="nav">
                   <div ref={el => {artist = el}} className="artist">Screenplay</div>
                   <div className="watch">
-                    <FontAwesomeIcon icon={faGlobe} className="watchicon"/>
-                    Explore
+                    {/* <FontAwesomeIcon icon={faGlobe} className="watchicon"/>
+                    Explore */}
                   </div>
                   <div className="menuwrapper">
                     <div className="menu">
