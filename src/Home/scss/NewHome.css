@@ -416,19 +416,15 @@
 
 .glitch::before {
   left: 4px;
-  text-shadow: -30px 0 #00aeff;
   background: #000;
 }
 
 .glitch::after {
   left: -2px;
-  text-shadow: -3px 0 #007bff;
-  animation: noise-anim 2s infinite alternate-reverse;
 }
 
 .glitch::before {
   clip: rect(54px, 250px, 56px, 40px);
-  animation: noise-anim 2s infinite alternate-reverse;
 }
 
 @-webkit-keyframes noise-anim {
