@@ -242,7 +242,7 @@
     transform: translate(-50%, -50%);
     width: 48vw;
     height: 46vh;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../../images/merry1.gif) no-repeat 50% 50%;
+    // background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../../images/merry1.gif) no-repeat 50% 50%;
     background-size: cover;
     animation: animateGIF 4s cubic-bezier(0, .58, 1, .58);
     /* animation-delay: 2s; */
@@ -300,8 +300,8 @@
   
   .glitch::after {
     left: -2px;
-    text-shadow: -3px 0 blue;
-    background: rgb(146, 145, 145);
+    text-shadow: -3px 0 #007bff;;
+    // background: rgb(146, 145, 145);
     animation: noise-anim 2s infinite alternate-reverse
   }
   
@@ -394,9 +394,9 @@
   
   
   @media screen and (max-width:900px){
-    .watch, .rotatethis, .hero-title p, .hero-gif {
+    // .watch, .rotatethis, .hero-title p, .hero-gif {
       // display: none;
-    }
+    // }
 
     .watch {
       display: none;
