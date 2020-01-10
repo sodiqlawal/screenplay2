@@ -1,8 +1,5 @@
 
 /* start animatednav */
-.headercover {
-  // background-color: rgba(0, 0, 0, 0.9) !important;
-}
 
 .navbody {
     margin: 0;
@@ -103,7 +100,8 @@
     font-size: 20px;
     color: #fff;
     display: flex;
-    // flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
     justify-content: space-between;
     // padding-top: 4px;
     z-index: 1000;
@@ -1002,7 +1000,7 @@
     }
   
     .navshowul li:not(:last-child) {
-      margin-right: 80px !important;
+      margin-right: 50px !important;
     }
   
     /* .navicon {
