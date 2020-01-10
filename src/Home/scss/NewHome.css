@@ -29,10 +29,13 @@
 
 .artist {
   z-index: 2;
-  position: fixed;
   line-height: 80px;
   margin: 0 40px;
   color: #fff;
+}
+
+.menu {
+  margin: 0 40px;
 }
 
 .watch {
@@ -60,6 +63,12 @@
   height: 100vh;
   margin: 0;
   padding: 0;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 @-webkit-keyframes grain {
@@ -148,16 +157,24 @@
   }
 }
 
-.menu {
-  z-index: 2;
-  position: fixed;
-  line-height: 80px;
+.headercover {
+  background-color: rgba(0, 0, 0, 0.9);
   right: 0;
-  margin: 0 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  line-height: 80px;
   font-size: 20px;
   color: #fff;
-  padding-top: 4px;
-  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1000;
   cursor: pointer;
 }
 
