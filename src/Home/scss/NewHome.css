@@ -63,12 +63,15 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  position: fixed;
-  z-index: 100000;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+.menuwrapper.actived {
+  z-index: 1000;
+  position: fixed;
 }
 
 @-webkit-keyframes grain {
@@ -163,8 +166,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   line-height: 80px;
   font-size: 20px;
   color: #fff;
@@ -176,7 +178,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 1000;
+  z-index: 10000;
   cursor: pointer;
 }
 

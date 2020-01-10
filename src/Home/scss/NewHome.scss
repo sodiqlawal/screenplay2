@@ -66,12 +66,18 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-    position: fixed;
-    z-index: 100000;
+    // position: fixed;
+    // z-index: 1;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+  }
+
+  .menuwrapper.actived {
+    z-index: 1000;
+    position: fixed;
+    // z-index: 1;
   }
 
   
@@ -95,7 +101,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    position: sticky;
+    position: fixed;
     line-height: 80px;
     font-size: 20px;
     color: #fff;
@@ -104,7 +110,7 @@
     padding: 0;
     justify-content: space-between;
     // padding-top: 4px;
-    z-index: 1000;
+    z-index: 10000;
     cursor: pointer;
   }
   
