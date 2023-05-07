@@ -15,7 +15,7 @@
     "circletype": "^2.3.0",
     "formik": "^2.0.6",
     "gsap": "^3.0.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.13.0",
     "particle-css": "0.0.1",
     "react": "^16.12.0",
